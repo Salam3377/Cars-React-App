@@ -5,51 +5,47 @@ import { Link } from 'react-router-dom'
 const linkStyle = {
     color: 'white',
     textDecoration: 'none'
+	
 }
 const authenticatedOptions = (
 	<>
-		<Nav.Item>
+		<Nav.Link>
+		<Link to='/cars' style={linkStyle}>
+				Cars
+			</Link>
+		</Nav.Link>
+		<Nav.Link>
+			<Link to='/create' style={linkStyle}>
+				Create a Car
+			</Link>
+		</Nav.Link>
+		<Nav.Link>
 			<Link to='change-password' style={linkStyle}>
 				Change Password
 			</Link>
-		</Nav.Item>
-		<Nav.Item>
+		</Nav.Link>
+		<Nav.Link>
 			<Link to='sign-out' style={linkStyle}>
 				Sign Out
 			</Link>
-		</Nav.Item>
-		<Nav.Item>
-			<Link to='create' style={linkStyle}>
-				Create a Car
-			</Link>
-		</Nav.Item>
-		<Nav.Item>
-			<Link to='cars' style={linkStyle}>
-				 Index All a Car
-			</Link>
-		</Nav.Item>
+		</Nav.Link>
 	</>
 )
 
 const unauthenticatedOptions = (
 	<>
-        <Nav.Item>
+        <Nav.Link>
 		    <Link to='sign-up' style={linkStyle}>Sign Up</Link>
-        </Nav.Item>
-
-        <Nav.Item>
+        </Nav.Link>
+        <Nav.Link>
 		    <Link to='sign-in' style={linkStyle}>Sign In</Link>
-        </Nav.Item>
+        </Nav.Link>
 	</>
 )
 
 const alwaysOptions = (
 	<>
-		<Nav.Link>
-			<Link to='/' style={linkStyle}>
-				Home
-			</Link>
-		</Nav.Link>
+
 	</>
 )
 
