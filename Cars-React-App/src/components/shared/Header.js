@@ -19,8 +19,13 @@ const authenticatedOptions = (
 			</Link>
 		</Nav.Item>
 		<Nav.Item>
-			<Link to='cars' style={linkStyle}>
+			<Link to='create' style={linkStyle}>
 				Create a Car
+			</Link>
+		</Nav.Item>
+		<Nav.Item>
+			<Link to='cars' style={linkStyle}>
+				 Index All a Car
 			</Link>
 		</Nav.Item>
 	</>
@@ -31,6 +36,7 @@ const unauthenticatedOptions = (
         <Nav.Item>
 		    <Link to='sign-up' style={linkStyle}>Sign Up</Link>
         </Nav.Item>
+
         <Nav.Item>
 		    <Link to='sign-in' style={linkStyle}>Sign In</Link>
         </Nav.Item>
@@ -51,7 +57,7 @@ const Header = ({ user }) => (
 	<Navbar bg='primary' variant='dark' expand='md'>
 		<Navbar.Brand>
             <Link to='/' style={linkStyle}>
-                react-auth-template
+                Home
             </Link>
         </Navbar.Brand>
 		<Navbar.Toggle aria-controls='basic-navbar-nav' />
